@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./external.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="./images/ccsm_DT.svg" alt="">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" >
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <!-- <a class="nav-link" href="./challenges.html" style="margin-right: 80px;">6 Week Challenge</i></a> -->
+              <a class="nav-link" href="#">About Us </a>
+              <a class="nav-link" href="#">Services </a>
+              <a class="nav-link" href="#">Countries </a>
+              <a class="nav-link" href="#">Partnership</a>
+              <a class="nav-link" href="#">Events</a>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Register</a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center hide_on_mobile">
+          <button class="mynav-btn">Login</button>
+          <button
+            class="navbar-toggler ml-2"
+            type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="d-flex align-items-center mobile_top_nav">
+          <button class="mynav-btn show_on_mobile">Login</button>
+          <button
+            class="navbar-toggler ml-2 show_on_mobile"
+            type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <br><br>
+      <div class="main-section">
+        <div class="col-md-6 homepage-main-box mt-1 d-flex justify-content-center">
+          <div>
+            <p class="homepage-main-heading">Your path to the top universities admission starts with</p>
+            <p class="hompage-main-sub inter-400">Our expertise lies in helping students secure admissions into their reach colleges, including the most selective universities in the United States.</p>
+            <br>
+            <button class="homepage-cta inter-600" style="width: fit-content; padding-left: 25px; padding-right: 25px;" onclick="window.location.href = 'https://calendly.com/erin-donovan/collegeadmissions?month=2024-05' ">BOOK YOUR STRATEGY SESSION!</button>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <div class="video-gradient">
+            <iframe style="border-radius: 10px;" width="450" height="400" src="https://www.youtube.com/embed/8M8-kKJShNo" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="capsule_main">
+        <div class="capsule">
+          <button class="capsule_btn capsule_btn_active inter-600"  onclick="active_button(this)">View All</button>
+          <button class="capsule_btn inter-600" onclick="active_button(this)">Starter</button>
+          <button class="capsule_btn inter-600" onclick="active_button(this)">Essential</button>
+          <button class="capsule_btn inter-600" onclick="active_button(this)">Premium</button>
+          <button class="capsule_btn inter-600" onclick="active_button(this)">VIP League</button>
+        </div>
+      </div>
+      <br><br>
+      <div class="types-main-box">
+        <div class="typebox">
+          <img src="./images/essential.svg" alt="">
+          <h4 class="gilroy-semibold">Essential</h4>
+          <p class="inter-400 text-black">For students at the very top of the Typical Applicant Pool</p>
+          <img class="small-blur-logo" src="./images/blur_num_box_logo.svg" alt="">
+          <button>Read More</button>
+        </div>
+        <div class="typebox">
+          <img src="./images/standard.svg" alt="">
+          <h4 class="gilroy-semibold">Standard</h4>
+          <p class="inter-400 text-black">For first generation students at top of Typical Applicant Pool</p>
+          <img class="small-blur-logo" src="./images/blur_num_box_logo.svg" alt="">
+          <button>Read More</button>
+        </div>
+        <div class="typebox">
+          <img src="./images/premium.svg" alt="">
+          <h4 class="gilroy-semibold">Premium</h4>
+          <p class="inter-400 text-black">For students who are in the top 50% of the Typical Applicant Pool</p>
+          <img class="small-blur-logo" src="./images/blur_num_box_logo.svg" alt="">
+          <button>Read More</button>
+        </div>
+        <div class="typebox">
+          <img src="./images/vip.svg" style="scale: 1.1;" alt="">
+          <h4 class="gilroy-semibold">VIP</h4>
+          <p class="inter-400 text-black">For students in the bottom 50% of Typical Applicant Pool.</p>
+          <img class="small-blur-logo" src="./images/blur_num_box_logo.svg" alt="">
+          <button>Read More</button>
+        </div>
+      </div>
+      <br><br>
+      <div class="gradient-box text-center flex-column-set quiz-box" style="height: 210px; position: relative; z-index: 0;">
+        <h3 class="text-center gilroy-medium text-white mb-0 percentage-text" style="font-size: 30px;">Curious which package is best for you? </h3>
+        <img class="gradient-box-footer" style="position: absolute; left: 0; bottom: 0; z-index: -1;" src="./images/gradient_wave.svg" alt="">
+        <img class="gradient-box-footer-mobile" style="position: absolute; left: 0; bottom: 0; z-index: -1; height: 70%;" src="./images/mobile_smaller_gradient.svg" alt="">
+        <button class="gradient-box-button inter-600 btn take-quiz-btn" onclick="window.location.href = './finalquiz.php' ">Take This Assessment</button>
+      </div>
+      <br>
+      <div class="approach_points">
+        <div style="flex: 1; display: flex; justify-content: center; flex-direction: column; align-items: start;" class="approach_points_content">
+          <h3 style="color: #447EF7; font-size: 32px;" class="gilroy-semibold">Packages are the Best Way to Boost Your Chances of Acceptance</h3>
+          <p style="color:  #758EB3;" class="inter-500">You and your family will have everything you need...</p>
+          <button class="btn num-b-button gilroy-semibold" style="padding: 8px 20px; align-items: start;" data-toggle="modal" data-target="#learn_strat_popup"> BOOK YOUR STRATEGY SESSION! </button>
+        </div>
+        <div  style="flex: 1; display: flex; justify-content: center;">
+          <img src="./images/package_best_way.svg" alt="" style="width: 90%; height: 90%;">
+        </div>
+      </div>
+        <br>
+        <h3 class="gilroy-semibold text-center hide_on_mobile" style="color: black;">You and your family will have <br> everything you need...</h3>
+        <h3 class="gilroy-semibold text-center show_on_mobile" style="color: black;">SIGN UP FOR OUR FREE 6 WEEK SAT CHALLENGE</h3>
+        <div class="d-flex justify-content-center">
+          <div class=" col-md-8 six-challenge-box">
+            <div class="d-flex" style="margin-bottom: 25px;">
+              <div class="mr-3"><img src="./images/blue-tick.svg" alt=""></div><div class="inter-400 challenge-box-text"> A start-to-finish plan that will give your child their best shot at their top universities </div>
+            </div>
+            <div class="d-flex" style="margin-bottom: 25px;">
+              <div class="mr-3"><img src="./images/blue-tick.svg" alt=""></div><div class="inter-400 challenge-box-text"> Accountability and structure to keep everything on track and never miss a deadline  </div>
+            </div>
+            <div class="d-flex" style="margin-bottom: 25px;">
+              <div class="mr-3"><img src="./images/blue-tick.svg"  alt=""></div><div class="inter-400 challenge-box-text"> Milestones to reduce the stress around the process.  </div>
+            </div>
+            <div class="d-flex" style="margin-bottom: 25px;">
+              <div class="mr-3"><img src="./images/blue-tick.svg" alt=""></div><div class="inter-400 challenge-box-text"> Monthly meetings with your Family Support Manager to get your questions answered  </div>
+            </div>
+            <div class="d-flex" style="margin-bottom: 25px;">
+              <div class="mr-3"><img src="./images/blue-tick.svg" alt=""></div><div class="inter-400 challenge-box-text"> Feedback and progress reports  </div>
+            </div>
+            <div class="d-flex" style="margin-bottom: 25px;">
+              <div class="mr-3"><img src="./images/blue-tick.svg" alt=""></div><div class="inter-400 challenge-box-text"> Expert mentorship and guidance for every step of the College Mastermind Approach </div>
+            </div>
+            
+          </div>
+        </div>
+        <br><br>
+        <h3 class="gilroy-semibold text-center hide_on_mobile" style="color: black;">Our Services</h3>
+        <div class="servicebox_main">
+          <div class="servicebox">
+            <img src="./images/essays.svg" alt="">
+            <h4 class="gilroy-semibold">Essays</h4>
+          </div>
+          <div class="servicebox">
+            <img src="./images/test_prep.svg" alt="">
+            <h4 class="gilroy-semibold">Test Prep</h4>
+          </div>
+          <div class="servicebox">
+            <img src="./images/initial_planning.svg" alt="">
+            <h4 class="gilroy-semibold">Test Prep</h4>
+          </div>
+          <div class="servicebox">
+            <img src="./images/application_strategy.svg" alt="">
+            <h4 class="gilroy-semibold">Application Services</h4>
+          </div>
+        </div>
+        <div class="servicebox_main">
+          <div class="servicebox">
+            <img src="./images/chasing_merit.svg" alt="">
+            <h4 class="gilroy-semibold">Scholarships</h4>
+          </div>
+          <div class="servicebox">
+            <img src="./images/tutoring.svg" alt="">
+            <h4 class="gilroy-semibold">Academic Support and Coaching</h4>
+          </div>
+          <div class="servicebox">
+            <img src="./images/value_credibility.svg" alt="">
+            <h4 class="gilroy-semibold">Value Credibility Project Planning</h4>
+          </div>
+          <div class="servicebox">
+            <img src="./images/personal_developement.svg" alt="">
+            <h4 class="gilroy-semibold">Project Focuses</h4>
+          </div>
+        </div>
+        <div class="servicebox_main">
+          <div class="servicebox">
+            <img src="./images/techonology_project.svg" alt="">
+            <h4 class="gilroy-semibold">Project Types</h4>
+          </div>
+          <div class="servicebox">
+            <img src="./images/sneaky_dog.svg" alt="">
+            <h4 class="gilroy-semibold">Project Focuses</h4>
+          </div>
+        </div>
+      </div> <!--container-->
+      <br><br>
+      <section class="gradient-section">
+        <div class="container">
+        <h3 class="gilroy-semibold text-center" style="font-size: 30px; color:#447EF7;">Our Clients Experiences</h3> <br>
+        <div class="testimonials-box">
+          <div class="card ">
+      
+            <div class="card-top p-2 d-flex justify-content-between" >
+              <div><h4 style="color: #222161;" class="gilroy-semibold">Cynthia - Student</h4></div> <div><img src="./images/quotes.svg" alt=""></div>
+            </div>
+            <p class="card-desc inter-400" style="color: #758EB3; font-size: 18px; margin-bottom: 0px;">College Mastermind helped me get into UChicago, my TOP CHOICE!</p>
+            <br>
+      
+            <div class="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <button class="btn num-b-button gilroy-semibold" style="padding: 10px 30px; align-items: start;"> Learn More </button>
+                </div>
+                <div>
+                  <img class="logo" style="scale: 1.65; " src="./images/Class of 2024.svg" alt="logo">
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="card ">
+      
+            <div class="card-top p-2 d-flex justify-content-between" >
+              <div><h4 style="color: #222161;" class="gilroy-semibold">Ashley - Student</h4></div> <div><img src="./images/quotes.svg" alt=""></div>
+            </div>
+            <p class="card-desc inter-400" style="color: #758EB3; font-size: 18px; margin-bottom: 0px;">I got into 4 Top30 universities, and I am off to Northwestern in spring!</p>
+            <br>
+            <div class="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <button class="btn num-b-button gilroy-semibold" style="padding: 10px 30px; align-items: start;"> Learn More </button>
+                </div>
+                <div>
+                  <img class="logo" style="scale: 1.65; " src="./images/Class of 2024.svg" alt="logo">
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="card ">
+      
+            <div class="card-top p-2 d-flex justify-content-between" >
+              <div><h4 style="color: #222161;" class="gilroy-semibold">Stephanie - Mother</h4></div> <div><img src="./images/quotes.svg" alt=""></div>
+            </div>
+            <p class="card-desc inter-400" style="color: #758EB3; font-size: 18px; margin-bottom: 0px;">Billy got a 36
+              on his ACT in only 4 sessions!</p>
+            <br>
+      
+            <div class="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <button class="btn num-b-button gilroy-semibold" style="padding: 10px 30px; align-items: start;"> Learn More </button>
+                </div>
+                <div>
+                  <img class="logo" style="scale: 1.65; " src="./images/Class of 2024.svg" alt="logo">
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <br>
+
+    <footer>
+      <div class="container">
+        <div>
+          <img class="footer_logo" src="./images/ccm_LT.svg" alt="">
+        </div>
+        <div class="mt-4 d-flex footer_links">
+          <div class="col-md-2 ">
+            <h5 class="gilroy-bold">Quick Link</h5>
+            <ul class="inter-400">
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Partnership</li>
+              <li>Packages</li>
+              <li>Meet Our Team</li>
+              <li>Contact US</li>
+            </ul>
+          </div>
+          <div class="col-md-2  ">
+            <h5 class="gilroy-bold">Services</h5>
+            <ul class="inter-400">
+              <li>5-Day Intensive</li>
+              <li>Test Prep</li>
+              <li>Admissions Service</li>
+              <li class="show_on_mobile">Scholarships</li>
+              <li class="show_on_mobile">internship</li>
+              <li class="show_on_mobile">Events</li>
+              <li class="show_on_mobile">FAQs</li>
+              
+            </ul>
+          </div>
+          <div class="col-md-2 hide_on_mobile">
+            <h5 class="gilroy-bold">&nbsp;</h5>
+            <ul class="inter-400">
+              <li>Scholarships</li>
+              <li>internship</li>
+              <li>Events</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <!-- <div class="col-md-2 hide_on_mobile ">
+            <h5 class="gilroy-bold">Countries</h5>
+            <ul class="inter-400">
+              <li>Saudi Arabia</li>
+              <li>UAE</li>
+              <li>Qatar</li>
+              <li>Oman</li>
+              <li>Kuwait</li>
+              <li>Bahrain</li>
+            </ul>
+          </div> -->
+          <div class="col-md-2 hide_on_mobile " style="visibility: hidden;">
+            <h5 class="gilroy-bold">&nbsp;</h5>
+            <ul class="inter-400">
+              <li>China</li>
+              <li>India</li>
+              <li>South Korea</li>
+  
+            </ul>
+          </div>
+          <div class="col-md-4 hide_on_mobile">
+            <h5 class="gilroy-bold" style="text-align: start;">Subscribe Our Newsletter</h5> <br>
+            <div style="border-bottom: 1px solid white;" class="p-2 mt-2">
+              <input type="text" class="inter-400 text-white" placeholder="Email"> <span class="plane"><img src="./images/newsletter_plane.svg" alt="" style="scale: 0.8;"></span>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between align-items-center socials">
+              <div><a href=""><img src="./images/facebook.svg" alt=""></a></div>
+              <div><a href="https://www.instagram.com/collegemastermind/"><img src="./images/instagram.svg" alt=""></a></div>
+              <div><a href="https://www.youtube.com/channel/UCRFs3V0CnTYspo3BFC29tMw"><img src="./images/youtube.svg" alt=""></a></div>
+              <div><a href="https://www.tiktok.com/@collegemastermind?is_from_webapp=1&sender_device=pc"><img src="./images/tictok.svg" alt=""></a></div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mt-4 show_on_mobile">
+          <h5 class="gilroy-bold" style="text-align: start;">Subscribe Our Newsletter</h5> <br>
+          <div style="border-bottom: 1px solid white;" class="p-2 mt-2">
+            <input type="text" class="inter-400 text-white" placeholder="Email"> <span class="plane"><img src="./images/newsletter_plane.svg" alt="" style="scale: 0.8;"></span>
+          </div>
+          <br>
+          <div class="d-flex justify-content-center align-items-center socials">
+            <div><a href=""><img src="./images/facebook.svg" alt=""></a></div>
+            <div><a href="https://www.instagram.com/collegemastermind/"><img src="./images/instagram.svg" alt=""></a></div>
+            <div><a href="https://www.youtube.com/channel/UCRFs3V0CnTYspo3BFC29tMw"><img src="./images/youtube.svg" alt=""></a></div>
+            <div><a href="https://www.tiktok.com/@collegemastermind?is_from_webapp=1&sender_device=pc"> <img src="./images/tictok.svg" alt=""></a></div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+          </div>
+        </div>
+        <br>
+        <div style="border-top: 1px solid white;">
+          <div class="d-flex justify-content-end p-2"> 
+            <ul class="d-flex inter-400"> 
+              <li>Privacy Policy</li>
+              <li class="ml-3">Legal Terms</li>
+            </ul>
+        </div>
+      </div>
+  
+      </div>
+      <img class="footer_wave" src="./images/footer_wave.svg" alt="">
+    </footer>
+    <script>
+      function active_button(btn){
+        $('.capsule_btn_active').removeClass('capsule_btn_active');
+        $(btn).addClass('capsule_btn_active');
+      }
+    </script>
+  </body>
+  </html>

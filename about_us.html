@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./external.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="about_us.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="./images/ccsm_DT.svg" alt="">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+   
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" >
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <!-- <a class="nav-link" href="challenge.html" style="margin-right: 80px;">6 Week Challenge</i></a> -->
+            <a class="nav-link" href="about_us.html">About Us </a>
+            <a class="nav-link" href="services.html">Services </a>
+            <a class="nav-link" href="#">Countries </a>
+            <a class="nav-link" href="#">Partnership</a>
+            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#">Register</a>
+        </div>
+      </div>
+      <div class="d-flex align-items-center hide_on_mobile">
+        <button class="mynav-btn">Login</button>
+        <button
+          class="navbar-toggler ml-2"
+          type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="d-flex align-items-center mobile_top_nav">
+        <button class="mynav-btn show_on_mobile">Login</button>
+        <button
+          class="navbar-toggler ml-2 show_on_mobile"
+          type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <br>
+    <div class="main-section">
+      <div class="col-md-8 homepage-main-box mt-1 d-flex justify-content-center">
+        <div>
+          <p class="homepage-main-heading">We're a team of genuine college <br> admissions experts</p>
+          <p class="hompage-main-sub inter-400">Achieve results you never thought possible. <br> Results-driven mentorship, guidance, and <br>support to get into your top choices.</p>
+          <br>
+          <button class="homepage-cta inter-600" onclick="window.location.href = 'https://calendly.com/erin-donovan/collegeadmissions?month=2024-05' ">BOOK YOUR STRATEGY SESSION!</button>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-end">
+        <div class="video-gradient">
+          <iframe style="border-radius: 10px;" width="450" height="400" src="https://www.youtube.com/embed/8M8-kKJShNo" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="main-section-mobile">
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="video-gradient">
+          <iframe style="border-radius: 10px;" width="400" height="400" src="https://www.youtube.com/embed/8M8-kKJShNo" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <br><br>
+      <div class="col-md-12 homepage-main-box mt-1 text-center">
+        <div>
+          <p class="homepage-main-heading">We're a team of genuine <br>college admissions <br>experts</p>
+          <p class="hompage-main-sub inter-400">Achieve results you never thought  <br>possible.Results-driven mentorship, <br>guidance, and support to get into your top choices.</p>
+          <br>
+          <button class="homepage-cta inter-600">BOOK YOUR STRATEGY SESSION!</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div  class="text-center mt-4 heading-gilbert">
+      <p style="color: #000; line-height: 1.2;" class="gilroy-bold">The College Mastermind Approach</p>
+    </div> <br>
+    <div class="num-box-main-box">
+      <div class="num-box1">
+        <img src="./images/01.svg" alt="">
+        <h4 class="gilroy-semibold">Typical Applicant Pool</h4>
+        <p class="inter-400">Your typical applicant pool as a high achiever is 3.9+ unweighted GPA, 1500+ SAT and 34+ ACT</p>
+        <button class="btn num-b-button gilroy-semibold" style="width: 100%;" data-toggle="modal" data-target="#modal_1">Learn More</button>
+      </div>
+      <div class="num-box1">
+        <img src="./images/02.svg" alt="">
+        <h4 class="gilroy-semibold">Know Your Value</h4>
+        <p class="inter-400">Be aware of 4-5 clear reasons a university would want you beyond scores, academics, and activities</p>
+        <button class="btn num-b-button gilroy-semibold" style="width: 100%;" data-toggle="modal" data-target="#modal_2">Learn More</button>
+      </div>
+      <div class="num-box1">
+        <img src="./images/03.svg" alt="">
+        <h4 class="gilroy-semibold">University Fit</h4>
+        <p class="inter-400">Have a list of universities that will recognize and appreciate the unique value you've identified for admission</p>
+        <button class="btn num-b-button gilroy-semibold" style="width: 100%;" data-toggle="modal" data-target="#modal_3">Learn More</button>
+      </div>
+    </div>
+    <div class="num-box-main-box">
+      <div class="num-box1">
+        <img src="./images/04.svg" alt="">
+        <h4 class="gilroy-semibold">Value Credibility</h4>
+        <p class="inter-400">Don't just tell universities you’re valuable; show them! Take steps to actively demonstrate your value</p>
+        <button class="btn num-b-button gilroy-semibold" style="width: 100%;" data-toggle="modal" data-target="#modal_4">Learn More</button>
+      </div>
+      <div class="num-box1">
+        <img src="./images/05.svg" alt="">
+        <h4 class="gilroy-semibold">Articulate Your Value</h4>
+        <p class="inter-400">Present your value to colleges and give them an undeniable case for why they should admit you.</p>
+        <button class="btn num-b-button gilroy-semibold" style="width: 100%;" data-toggle="modal" data-target="#modal_5">Learn More</button>
+      </div>
+      <div class="float-logo">
+        <img src="./images/blur_num_box_logo.svg" alt="">
+      </div>
+    </div>
+    <br> <br>
+    <!-- <div class="gradient-box text-center d-flex justify-content-center align-items-center mt-4" style="height: 210px; position: relative; z-index: 0;">
+      <h3 class="text-center gilroy-medium text-white mb-0" style="font-size: 30px;">This college admissions approach will send <br> your acceptances through the roof!</h3>
+      <img class="gradient-box-footer" style="position: absolute; left: 0; bottom: 0; z-index: -1;" src="./images/gradient_wave.svg" alt="">
+      <img class="gradient-box-footer-mobile" style="position: absolute; left: 0; bottom: 0; z-index: -1; height: 70%;" src="./images/mobile_smaller_gradient.svg" alt="">
+    </div>
+    <br>
+    <br> -->
+
+    <div class="num-box-dflex" style="background-color: #447EF7;">
+      <div class="num-box text-center">
+       <h3 style="color: #447EF7; font-size: 42px;" class="gilroy-bold">100%</h3>
+       <p  style="color: black;"class="inter-402">of high achievers got into a top 20 university in 2024.</p>
+      </div>
+      <div class="num-box text-center">
+       <h3 style="color: #447EF7; font-size: 42px;" class="gilroy-bold">94%</h3>
+       <p style="color: black;" class="inter-402">of our clients got one of their top 3 choices the past 2 years.</p>
+      </div>
+      <div class="num-box text-center">
+       <h3 style="color: #447EF7;" class="gilroy-bold"><img class="star" src="images/nw_star.svg" alt="" style="width: 70px;height:70px" ></h3>
+       <p style="color: black;" class="inter-501">Perfect ACT scores in 2024 School Year</p>
+      </div>
+      <br> 
+    </div>
+    <br>
+    <br>
+
+
+    <div class="approach_points hide_on_mobile">
+      <div style="flex: 1; display: flex; justify-content: center; flex-direction: column; align-items: start;" class="approach_points_content">
+        <h3 style="color: #447EF7; font-size: 32px;" class="gilroy-semibold">Our Mission</h3>
+        <p style="color:  #758EB3;" class="inter-500">As a family-owned business, College Mastermind is dedicated <br>to helping students discover their potential, know their value,<br>find the right university fit, and grow into honorable, productive,<br>and pricipled adults.</p>
+        <p style="color:  #758EB3;" class="inter-500">We aim to foster a legacy of exceptional individuals who uplift <br>themselves, their families, and society, believing that greatness <br>stems from valuable contributions and virtuous character.</p>
+      </div>
+      <div class="col-md-5" style="flex: 1; display: flex; justify-content: center;" >
+        <img src="./images/nw our mission.svg" alt="" style="width: 80%; height: 100%;">
+      </div>
+    </div>
+
+    <div class="main-section-mobile">
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="col-md-4" style="flex: 1; display: flex; justify-content: center;" >
+          <img src="./images/nw frame271.png" alt="" style="width: 80%; height: 90%;">
+        </div>
+      </div>
+      <br>
+      <div class="col-md-12 homepage-main-box mt-1 text-center">
+        <div style="flex: 1; display: flex; justify-content: center; flex-direction: column; align-items: center;" class="approach_points_content">
+          <h3 style="color: #447EF7; font-size: 32px;" class="gilroy-semibold">Our Mission</h3>
+          <p style="color:  #758EB3;" class="inter-500">As a family-owned business, College Mastermind is dedicated <br>to helping students discover their potential, know their value,<br>find the right university fit, and grow into honorable, productive,<br>and pricipled adults.</p>
+          <p style="color:  #758EB3;" class="inter-500">We aim to foster a legacy of exceptional individuals who uplift <br>themselves, their families, and society, believing that greatness <br>stems from valuable contributions and virtuous character.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <h3 class="gilroy-bold text-center types-heading" >Core Values</h3>
+    <div class="types-main-box">
+      <div class="typebox">
+        <img src="./images/nw integrity.png" alt="">
+        <p style="color:  #758EB3;" class="inter-500">Integrity</p>
+      </div>
+      <div class="typebox">
+        <img src="./images/nw honesty.png" alt="">
+        <p style="color:  #758EB3;" class="inter-500">Honesty</p>
+      </div>
+      <div class="typebox">
+        <img src="./images/nw impact.png" alt="">
+        <p style="color:  #758EB3;" class="inter-500">Impact</p>
+      </div>
+      <div class="typebox">
+        <img src="./images/nw honor.png" style="scale: 1.1;" alt="">
+        <p style="color:  #758EB3;" class="inter-500">Honor</p>
+      </div>
+    </div>
+    <br>
+
+
+    <div class="gradient-box text-center flex-column-set quiz-box" style="height: 210px; position: relative; z-index: 0;">
+      <h3 class="text-center gilroy-medium text-white mb-0 percentage-text" style="font-size: 30px;">Meet the College Mastermind Team</h3>
+      <img class="gradient-box-footer" style="position: absolute; left: 0; bottom: 0; z-index: -1;" src="./images/gradient_wave.svg" alt="">
+      <img class="gradient-box-footer-mobile" style="position: absolute; left: 0; bottom: 0; z-index: -1; height: 70%;" src="./images/mobile_smaller_gradient.svg" alt="">
+      <button class="gradient-box-button inter-600 btn take-quiz-btn" onclick="window.location.href = '#' ">CLICK HERE TO SEE OUR TEAM</button>
+    </div>
+
+
+    <div class="approach_points">
+      <div style="flex: 1; display: flex; justify-content: center; flex-direction: column; align-items: start;" class="approach_points_content">
+        <h3 style="color: #447EF7; font-size: 32px;" class="gilroy-semibold">Discover a college admissions <br>approach that can be used with <br>every single university to get <br>more acceptances</h3>
+        <p style="color:  #758EB3;" class="inter-500">Achieve results you never thought possible with a <br>proven approach to get into your top choices.</p>
+      </div>
+      <div class="col-md-6 mx-auto">
+        <div class="six-challenge-box mb-3">
+          <div class="d-flex" style="margin-bottom: 25px;">
+            <div class="mr-3"><img src="./images/blue-tick.svg" alt=""></div>
+            <div class="inter-400 challenge-box-text">Never again feel unsure about your chances of admissions into a university</div>
+          </div>
+        </div>
+        <div class="six-challenge-box mb-3">
+          <div class="d-flex" style="margin-bottom: 25px;">
+            <div class="mr-3"><img src="./images/blue-tick.svg" alt=""></div>
+            <div class="inter-400 challenge-box-text">Get a strategy that provides a predictable result and a great fit university</div>
+          </div>
+        </div>
+        <div class="six-challenge-box mb-3">
+          <div class="d-flex" style="margin-bottom: 25px;">
+            <div class="mr-3"><img src="./images/blue-tick.svg" alt=""></div>
+            <div class="inter-400 challenge-box-text">Experience all of the support and accountability your child needs to reach their goals!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+  </div> 
+    <section class="gradient-section">
+        <div class="container">
+        <h3 class="gilroy-semibold text-center" style="font-size: 30px; color:#447EF7;">Our Clients Experiences</h3> <br>
+        <div class="testimonials-box">
+          <div class="card ">
+      
+            <div class="card-top p-2 d-flex justify-content-between" >
+              <div><h4 style="color: #222161;" class="gilroy-semibold">Cynthia - Student</h4></div> <div><img src="./images/quotes.svg" alt=""></div>
+            </div>
+            <p class="card-desc inter-400" style="color: #758EB3; font-size: 16px; margin-bottom: 0px;">College Mastermind helped me get into UChicago, my TOP CHOICE!</p>
+            <br>
+      
+            <div class="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <button class="btn num-b-button gilroy-semibold" style="padding: 10px 30px; align-items: start;"> Learn More </button>
+                </div>
+                <div>
+                  <img class="logo" style="scale: 1.65; " src="./images/Class of 2024.svg" alt="logo">
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="card ">
+      
+            <div class="card-top p-2 d-flex justify-content-between" >
+              <div><h4 style="color: #222161;" class="gilroy-semibold">Ashley - Student</h4></div> <div><img src="./images/quotes.svg" alt=""></div>
+            </div>
+            <p class="card-desc inter-400" style="color: #758EB3; font-size: 18px; margin-bottom: 0px;">I got into 4 Top30 universities, and I am off to Northwestern in spring!</p>
+            <br>
+            <div class="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <button class="btn num-b-button gilroy-semibold" style="padding: 10px 30px; align-items: start;"> Learn More </button>
+                </div>
+                <div>
+                  <img class="logo" style="scale: 1.65; " src="./images/Class of 2024.svg" alt="logo">
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <div class="card ">
+      
+            <div class="card-top p-2 d-flex justify-content-between" >
+              <div><h4 style="color: #222161;" class="gilroy-semibold">Stephanie - Mother</h4></div> <div><img src="./images/quotes.svg" alt=""></div>
+            </div>
+            <p class="card-desc inter-400" style="color: #758EB3; font-size: 18px; margin-bottom: 0px;">Billy got a 36
+              on his ACT in only 4 sessions!</p>
+            <br>
+      
+            <div class="">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <button class="btn num-b-button gilroy-semibold" style="padding: 10px 30px; align-items: start;"> Learn More </button>
+                </div>
+                <div>
+                  <img class="logo" style="scale: 1.65; " src="./images/Class of 2024.svg" alt="logo">
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <footer>
+      <div class="container">
+        <div>
+          <img class="footer_logo" src="./images/ccm_LT.svg" alt="">
+        </div>
+        <div class="mt-4 d-flex footer_links">
+          <div class="col-md-2 ">
+            <h5 class="gilroy-bold">Quick Link</h5>
+            <ul class="inter-400">
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Partnership</li>
+              <li>Packages</li>
+              <li>Meet Our Team</li>
+              <li>Contact US</li>
+            </ul>
+          </div>
+          <div class="col-md-2  ">
+            <h5 class="gilroy-bold">Services</h5>
+            <ul class="inter-400">
+              <li>5-Day Intensive</li>
+              <li>Test Prep</li>
+              <li>Admissions Service</li>
+              <li class="show_on_mobile">Scholarships</li>
+              <li class="show_on_mobile">internship</li>
+              <li class="show_on_mobile">Events</li>
+              <li class="show_on_mobile">FAQs</li>
+              
+            </ul>
+          </div>
+          <div class="col-md-2 hide_on_mobile">
+            <h5 class="gilroy-bold">&nbsp;</h5>
+            <ul class="inter-400">
+              <li>Scholarships</li>
+              <li>internship</li>
+              <li>Events</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+          <!-- <div class="col-md-2 hide_on_mobile ">
+            <h5 class="gilroy-bold">Countries</h5>
+            <ul class="inter-400">
+              <li>Saudi Arabia</li>
+              <li>UAE</li>
+              <li>Qatar</li>
+              <li>Oman</li>
+              <li>Kuwait</li>
+              <li>Bahrain</li>
+            </ul>
+          </div> -->
+          <div class="col-md-2 hide_on_mobile " style="visibility: hidden;">
+            <h5 class="gilroy-bold">&nbsp;</h5>
+            <ul class="inter-400">
+              <li>China</li>
+              <li>India</li>
+              <li>South Korea</li>
+  
+            </ul>
+          </div>
+          <div class="col-md-4 hide_on_mobile">
+            <h5 class="gilroy-bold" style="text-align: start;">Subscribe Our Newsletter</h5> <br>
+            <div style="border-bottom: 1px solid white;" class="p-2 mt-2">
+              <input type="text" class="inter-400 text-white" placeholder="Email"> <span class="plane"><img src="./images/newsletter_plane.svg" alt="" style="scale: 0.8;"></span>
+            </div>
+            <br>
+            <div class="d-flex justify-content-between align-items-center socials">
+              <div><a href=""><img src="./images/facebook.svg" alt=""></a></div>
+              <div><a href="https://www.instagram.com/collegemastermind/"><img src="./images/instagram.svg" alt=""></a></div>
+              <div><a href="https://www.youtube.com/channel/UCRFs3V0CnTYspo3BFC29tMw"><img src="./images/youtube.svg" alt=""></a></div>
+              <div><a href="https://www.tiktok.com/@collegemastermind?is_from_webapp=1&sender_device=pc"><img src="./images/tictok.svg" alt=""></a></div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+              <div>&nbsp;</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mt-4 show_on_mobile">
+          <h5 class="gilroy-bold" style="text-align: start;">Subscribe Our Newsletter</h5> <br>
+          <div style="border-bottom: 1px solid white;" class="p-2 mt-2">
+            <input type="text" class="inter-400 text-white" placeholder="Email"> <span class="plane"><img src="./images/newsletter_plane.svg" alt="" style="scale: 0.8;"></span>
+          </div>
+          <br>
+          <div class="d-flex justify-content-center align-items-center socials">
+            <div><a href=""><img src="./images/facebook.svg" alt=""></a></div>
+            <div><a href="https://www.instagram.com/collegemastermind/"><img src="./images/instagram.svg" alt=""></a></div>
+            <div><a href="https://www.youtube.com/channel/UCRFs3V0CnTYspo3BFC29tMw"><img src="./images/youtube.svg" alt=""></a></div>
+            <div><a href="https://www.tiktok.com/@collegemastermind?is_from_webapp=1&sender_device=pc"> <img src="./images/tictok.svg" alt=""></a></div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+          </div>
+        </div>
+        <br>
+        <div style="border-top: 1px solid white;">
+          <div class="d-flex justify-content-end p-2"> 
+            <ul class="d-flex inter-400"> 
+              <li>Privacy Policy</li>
+              <li class="ml-3">Legal Terms</li>
+            </ul>
+        </div>
+      </div>
+  
+      </div>
+      <img class="footer_wave" src="./images/footer_wave.svg" alt="">
+    </footer>
+    <style>
+      .modal-body p {
+        color: #758EB3;
+      }
+    </style>
+    <div class="modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <img src="./images/popup_5.svg" alt="">
+            </div>
+          </div>
+          <div class="modal-body">
+            <h5 class="gilroy-semibold" style="color: #027DD1; ">STEP 1 - Typical Applicant Pool</h5>
+            <p class="inter-400">
+              College applications are about more than just GPA, test scores, and activities, but these elements still hold significance. Universities typically expect students to meet certain academic and extracurricular standards. The further ahead from everyone who is applying to that university, the better your chances of acceptance. We refer to the amount of value you need to bring in order to be accepted at a university as the ‘Value Gap.’ This gap varies in size among applicants. The larger your gap, the more value you will need to demonstrate to the university to get accepted.
+            </p>    
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <img src="./images/popup_5.svg" alt="">
+            </div>
+          </div>
+          <div class="modal-body">
+            <h5 class="gilroy-semibold" style="color: #027DD1; font-size: 1rem;">STEP 2 - Know Your Value</h5>
+            <p class="inter-400">
+              Let's think of value like a special ‘something’ that makes someone or something important or useful to others! Understanding your value is crucial when navigating the competitive landscape of college admissions. It's about recognizing your unique strengths, passions, and experiences that set you apart. This is the differentiating factor between acceptance and rejection. Once you’re in the Typical Applicant Pool, you must understand the unique blend of qualities, experiences, and aspirations that make you a valuable resource to a university.
+            </p>    
+            <p class="inter-400">
+              Every student should be able to quickly and confidently list 4-5 reasons why they are an asset you a university, but even most high achievers cannot do this. This stage is all about expanding a student’s self awareness and opening their eyes to the very things that make them such an irreplaceable asset to life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <img src="./images/popup_5.svg" alt="">
+            </div>
+          </div>
+          <div class="modal-body">
+            <h5 class="gilroy-semibold" style="color: #027DD1;">STEP 3 - University Fit</h5>
+            <p class="inter-400">
+              After these 2 steps, it’s now time to know how to build a college list, and here we have 2 main things to consider. 
+            </p>
+            <h5 style="color: black;" class="gilroy-semibold">STAGE 1 - Create a tangible list based on the Typical Applicant Pool</h5>
+            <p class="inter-400">
+              The ideal university list in general, covers 3 categories of choices: your ‘reach colleges’, ‘target’ colleges, and ‘safety’ colleges. Your reach colleges are universities that are difficult to get into or  a bit higher than your current merits, but still possible. Your ideal colleges are universities where the typical enrolled student matches your profile, and your safety colleges are universities where you are very likely to get in.  
+            </p>
+            <h5 style="color: black;" class="gilroy-semibold">STAGE 2 - Match the university's value with your Personal Value Profile.</h5>
+            <p class="inter-400">Your personal value is your biggest asset in college admissions, and understanding this concept will highly increase your chances. More selective universities all have unique “flavors” of value they look for and find the students who demonstrate it best. During this phase you will thoroughly research the value of each possible university and come out with a great list of best-fit universities!</p>
+            <p class="inter-400">This is the stage that we will take you from a typical applicant with a more “flat” profile into an irresistible student whose top universities can’t wait to admit.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <img src="./images/popup_5.svg" alt="">
+            </div>
+          </div>
+          <div class="modal-body">
+            <h5 class="gilroy-semibold" style="color: #03B3C6;">STEP 4 - Value Credibility Project </h5>
+            <p class="inter-400">
+              You cannot ignore the importance of showcasing your true value to universities. It's not just about telling them that you’re great; it's about showing them in tangible and impactful ways. That's where our focus on Value Credibility comes into play. 
+            </p>
+            <p class="inter-400">
+              Value credibility is more than just a catchphrase; it's a philosophy that drives every single aspect of our approach at College Mastermind. We believe in the power of action and in demonstrating value through tangible efforts, meaningful experiences, and challenging projects. Every applicant vies for attention, so you can’t just list a bunch of activities and hope that you’ll automatically get into the “yes” pile!
+            </p>
+            <p class="inter-400">
+              A Value Credibility Project is a transformative journey that adds a unique layer of personal and professional development to your profile. The projects serve three main purposes: highlight and develop strengths, overcome or minimize gaps in your profile, and pursue a genuine interest as you explore career potentials.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <img src="./images/popup_5.svg" alt="">
+            </div>
+          </div>
+          <div class="modal-body">
+            <h5 class="gilroy-semibold" style="color: #0EB582;">
+               STEP 5 - Articulate Your Value
+            </h5>
+            <p class="inter-400">
+              Now for our final step of the College Mastermind Approach, when you present everything you’ve done!  In this final step, you will build your application in order to show your top colleges that you deserve a spot at their university. Every single part of the application will be considered, including the activities list, the awards list, the additional information section, the main essay, any supplemental essays, letters of recommendation, interviews, and the entire application. 
+            </p>
+            <p class="inter-400">
+              All the pieces together will carefully demonstrate your value, showing undeniable proof that you are the ideal student for that college.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="learn_strat_popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <img src="./images/gradient_frame.svg" alt="">
+            </div>
+          </div>
+          <div class="modal-body">
+            <p class="inter-400">
+              This is going to be one of the most powerful personal experiences of your child’s life. The goal is not to just to get into college, but to expand their perspective to develop a deep and mature view of their value beyond activities, grades, test scores, and accomplishments.
+            </p>
+            <p class="inter-400">
+              So many people believe that college admissions revolves around luck, but this isn’t true!  Surprisingly, it revolves around value. Our approach will push your child to uncover and claim the type of value that universities can’t get enough of, positioning them ahead of the other applicants at their top choices. Your child’s time with College Mastermind will completely change the way they present themselves to colleges, while taking them on a journey of self-discovery and personal mastery.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
